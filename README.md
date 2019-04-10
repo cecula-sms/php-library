@@ -60,7 +60,7 @@ To send SMS with alphanumeric identity to single or multiple contacts, use the c
         ]
     ]
 
-    $cecula->sendA2PSMS(messageData);
+    $cecula->sendA2PSMS($messageData);
 ```
 Your response should look like this:
  ```sh
@@ -88,7 +88,7 @@ To send a message using numberic identity, use the code below:
         ]
     ];
 
-    $cecula->sendP2PSMS(messageData);
+    $cecula->sendP2PSMS($messageData);
 ```
 Your response should look like this:
 ```sh
