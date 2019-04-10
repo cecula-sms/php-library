@@ -1,0 +1,31 @@
+{
+    "name": "cecula/sms",
+    "description": "Cecula PHP library for sending A2P and P2P SMS",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+      "cecula",
+      "sms",
+      "a2p",
+      "p2p",
+      "bulksms",
+      "bulk",
+      "text",
+      "messaging",
+      "nigeria",
+      "bbn",
+      "api"
+    ],
+    "version": "0.0.1",
+    "authors": [
+        {
+            "name": "Godwin Noah",
+            "email": "godwin.noah@cecula.com",
+            "homepage": "https://www.noahgodwin.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
