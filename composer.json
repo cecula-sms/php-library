@@ -1,6 +1,6 @@
 {
     "name": "cecula/sms",
-    "description": "Cecula PHP library for sending A2P and P2P SMS",
+    "description": "PHP library for sending A2P and P2P SMS on Cecula https://www.cecula.com",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -23,6 +23,11 @@
             "homepage": "https://www.noahgodwin.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Cecula\\": "class/"
+        }
+    },
     "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0"

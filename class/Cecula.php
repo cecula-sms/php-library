@@ -11,6 +11,8 @@
  * @link      https://cecula.com
  */
 
+ namespace Cecula;
+ 
  class Cecula{
     private $_host = 'https://api.cecula.com';
 
