@@ -2,10 +2,10 @@
 
 - [Cecula SMS](#cecula-sms)
   - [Introduction](#introduction)
-  - [How to use this Library](#how-to-use-this-library)
+  - [How to Use](#how-to-use)
   - [Installation](#installation)
   - [How to Generate an API Key](#how-to-generate-an-api-key)
-  - [Importing Cecula Library](#importing-cecula-library)
+  - [Loading Package into your Project](#loading-package-into-your-project)
   - [Sending A2P SMS](#sending-a2p-sms)
   - [Sending P2P SMS](#sending-p2p-sms)
   - [Checking A2P SMS Balance](#checking-a2p-sms-balance)
@@ -16,9 +16,9 @@
 
 ## Introduction
 
-Cecula SMS Library enables you to quickly integrate and send A2P and P2P Messages from your application.
+Cecula SMS Package (also called Library) enables you to quickly integrate and send A2P and P2P Messages from your application.
 
-## How to use this Library
+## How to Use
 
 * Install Cecula SMS using composer by following the instructions in the Installation section or clone from GitHub
  * Login to the <a href="https://developer.cecula.com" target="_blank">Cecula Developers Platform</a> register your app and generate an API KEY
@@ -40,12 +40,17 @@ Your API Key is first generated when you register an app. To register an app,
 Login to the Developers Dashboard, Navigate to __Apps > Add__, Type the name of your app and click **Submit**. The app will be registered and a new API Key will be generated. Copy the API key into your project.
 Click [developer.cecula.com](https://developer.cecula.com/docs/introduction/generating-api-key) to get started.
 
-## Importing Cecula Library
+## Loading Package into your Project
 
-import the library into your script using the code below
+If you installed installed app with composer use the code below to load package into your project
 ```sh
-require_once "./class/Cecula.php";
-$cecula = new Cecula("<API_KEY>");
+require_once __DIR__."/vendor/autoload.php"
+$cecula = new \Cecula\Cecula("<API_KEY>");
+```
+If you cloned from github, use the code below to load package into your project
+```sh
+require_once "/path/to/class/Cecula.php";
+$cecula = new \Cecula\Cecula("<API_KEY>");
 ```
 
 ## Sending A2P SMS
